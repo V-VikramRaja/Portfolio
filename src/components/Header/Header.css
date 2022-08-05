@@ -106,54 +106,26 @@
     justify-content: flex-start;
     height: 5vh;
     color: white;
-    position: relative;
     margin-bottom: 15px
 }
 
-.portfolio__header__form__email label {
-    font-size: 14px;
-    position: absolute;
-    top: 8px;
-    position: absolute;
-    cursor: text;
-    z-index: 2;
-    left: 10px;
-    font-weight: bold;
-    padding: 0 10px;
-    background: transparent;
-    color: var(--color-btn);
-    transition: all .3s ease;
-    font-family: 'Poppins';
-}
-
 .portfolio__header__form__email input {
-    border-radius: 10px 0 0 10px !important;
-    display: block;
-    width: 300px;
     height: 5vh;
-    background: transparent;
-    outline: none;
+    border-radius: 10px 0px 0px 10px;
+    width: 20rem;
+    outline:none;
     border: none;
-    transition: all .3s ease;
-    padding: 0 15px;
-    background-color: #41344D;
+    background-color: var(--color-input);
     color: white;
-    font-family: 'Poppins';
-    font-weight: 400;
+    padding-left: 20px;
 }
 
 .portfolio__header__form__email input::placeholder {
-    color: var(--color-btn);
-    display: none;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    padding-left: 20px;
+    color: var(--color-btn);
 }
-
-.portfolio__header__form__email input:focus {
-    border-color: var(--color-btn);
-    outline: none;
-}
-
 
 .portfolio__header__email__form button{
     width: 9rem;
