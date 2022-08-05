@@ -180,7 +180,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        height: auto;
+        height: 100vh;
     }
     .portfolio__contact__main__topPart__say{
         width: 80%;
@@ -190,13 +190,20 @@
         width: 300px !important;
     }
 
+    .portfolio__contact__form__name input
+    .portfolio__contact__form__email input
+    .portfolio__contact__form__message input{
+        margin-bottom: 100px;
+        overflow: hidden;
+    }
+
     .portfolio__contact__form__name input:focus{
-        margin: 50px 0;
+        margin-bottom: 150px;
     }
     .portfolio__contact__form__email input:focus {
-        margin: 50px 0;
+        margin-bottom: 150px;
     }
     .portfolio__contact__form__message input:focus {
-        margin: 50px 0;
+        margin-bottom: 150px;
     }
 }
