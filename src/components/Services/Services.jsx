@@ -34,7 +34,7 @@ function Services() {
 
         <div className="portfolio__services__main__Wrapper__right" >
           <div className="portfolio__services__main__right__container" >
-            <div className="portfolio__services__main__right__container" >
+            <div className="portfolio__services__main__right__container2" >
               <div className="portfolio__services__main__right__container__img">
                 <img className="portfolio__services__main__img__development" src={developmentImg} alt="Computer Development" />
               </div>

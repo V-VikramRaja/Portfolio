@@ -102,6 +102,7 @@
     .portfolio__services__main {
         height: auto !important;
         margin-top: 50px;
+        position: relative;
     }
     .portfolio__services__main__wrapper {
         display: flex;
