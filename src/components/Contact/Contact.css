@@ -189,24 +189,4 @@
     .portfolio__contact__form__main__container input {  
         width: 300px !important;
     }
-
-    .portfolio__contact__form__sec__container{
-        position: relative;
-    }
-    .portfolio__contact__form__main__container{
-        position: relative;
-    }
-    .portfolio__contact__form__name{
-        margin-top: 30px;
-        position: absolute;  
-        top: -90px;
-    }
-    .portfolio__contact__form__email {
-        position: absolute;  
-        top: 90px; 
-    }
-    .portfolio__contact__form__message {
-        position: absolute;
-        top: -70px;
-    }
 }
