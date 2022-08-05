@@ -110,7 +110,7 @@
     margin-bottom: 15px
 }
 
-.portfolio__header__email__form label {
+.portfolio__header__form__email label {
     font-size: 14px;
     position: absolute;
     top: 8px;
@@ -126,7 +126,7 @@
     font-family: 'Poppins';
 }
 
-.portfolio__header__email__form input {
+.portfolio__header__form__email input {
     border-radius: 10px 0 0 10px !important;
     display: block;
     width: 300px;
@@ -142,18 +142,18 @@
     font-weight: 400;
 }
 
-.portfolio__header__email__form input:focus {
-    border-color: var(--color-btn);
-    outline: none;
-    height: 7vh;
-    border-radius: 15px 0px 15px 15px!important;
+.portfolio__header__form__email input::placeholder {
+    color: var(--color-btn);
+    display: none;
+    font-family: 'Poppins';
+    font-weight: 600;
 }
 
-.portfolio__header__email__form input:focus+label {
-    font-size: 11px;
-    top: 1px;
-    color: var(--color-btn);
+.portfolio__header__form__email input:focus {
+    border-color: var(--color-btn);
+    outline: none;
 }
+
 
 .portfolio__header__email__form button{
     width: 9rem;

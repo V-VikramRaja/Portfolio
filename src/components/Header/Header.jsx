@@ -54,8 +54,7 @@ function Header() {
             <div>
               <form onSubmit={headerFormSubmitHandler} className="portfolio__header__email__form" >
                 <div className="portfolio__header__form__email" >
-                  <input type="email" name="useremail" required value={headerEmail} onChange={headerEmailChangeHandler} />
-                  <label htmlFor="email">Your E-mail:</label>
+                  <input type="email" name="useremail" placeholder="Your Email" required value={headerEmail} onChange={headerEmailChangeHandler} />
                 </div>
                 <button className={mailSent? 'portfolio__header__email__sent': ''} >{!mailSent? "Get Started": "Done"}</button>
               </form>
