@@ -1,0 +1,110 @@
+.portfolio__services__main {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(16, 4, 26, 1);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.portfolio__services__main__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: space-between;
+}
+
+.portfolio__services__main__right__container,
+.portfolio__services__main__left__container1{
+    width: 405px;
+    height: 513px;
+}
+
+
+.portfolio__services__main__left__container1,
+.portfolio__services__main__right__container {
+    background-color: var(--color-blue);
+}
+
+.portfolio__services__main__left__design,
+.portfolio__services__main__left__design__text,
+.portfolio__services__main__right__development,
+.portfolio__services__main__right__development__text{
+    padding: 5px;
+}
+
+.portfolio__services__main__left__design,
+.portfolio__services__main__right__development{
+    font-family: 'Poppins';
+    font-size: 35px;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.portfolio__services__main__left__design__text,
+.portfolio__services__main__right__development__text{
+    font-family: 'Poppins';
+}
+
+.portfolio__services__main__right__container{
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 1080px ){
+
+    .portfolio__services__main {
+        height: 100vh;
+    }
+
+    .portfolio__services__main__right__container,
+    .portfolio__services__main__left__container1 {
+        width: 300px;
+    }
+
+    .portfolio__services__main__left__container__img img,
+    .portfolio__services__main__right__container__img img {
+        width: 300px;
+        height: auto;
+    }
+
+    .portfolio__services__main__left__design,
+    .portfolio__services__main__right__development {
+        font-family: 'Poppins';
+        font-size: 30px;
+    }
+
+    .portfolio__services__main__left__design__text,
+    .portfolio__services__main__right__development__text {
+        font-family: 'Poppins';
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .portfolio__services__main__left__container{
+        margin: unset;
+        width: 350px;
+        height: 30vh;
+        overflow-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .portfolio__services__main__left__container{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .portfolio__services__main {
+        height: auto !important;
+    }
+    .portfolio__services__main__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

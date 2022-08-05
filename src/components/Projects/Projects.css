@@ -1,0 +1,92 @@
+.portfolio__projects__main {
+    width: 100%;
+    background-color: var(--background-color);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+}   
+
+.portfolio__projects__main__heading{
+    font-family: 'Poppins';
+    margin: 0 auto;
+    color: white;
+    padding: 50px 0;
+}
+
+.portfolio__projects__main__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+}
+
+.portfolio__projects__main__wrapper__div1,
+.portfolio__projects__main__wrapper__div2,
+.portfolio__projects__main__wrapper__div3{
+    display: flex;
+    flex-direction: row;
+    /* align-items: space-between; */
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+
+.portfolio__projects__main__wrapper__div1_sec2,
+.portfolio__projects__main__wrapper__div2_sec2,
+.portfolio__projects__main__wrapper__div3_sec2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.portfolio__projects__main__wrapper__div1_sec2 h2 a,
+.portfolio__projects__main__wrapper__div2_sec2 h2 a,
+.portfolio__projects__main__wrapper__div3_sec2 h2 a {
+    font-family: 'Poppins';
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #FCE2A7;
+    cursor: pointer;
+}
+
+.portfolio__projects__main__wrapper__div1_sec2 p,
+.portfolio__projects__main__wrapper__div2_sec2 p,
+.portfolio__projects__main__wrapper__div3_sec2 p {
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+@media screen and (max-width: 680px) {
+    .portfolio__projects__main__wrapper__div1_sec1 img ,
+    .portfolio__projects__main__wrapper__div2_sec1 img,
+    .portfolio__projects__main__wrapper__div3_sec1 img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .portfolio__projects__main__wrapper__div1,
+    .portfolio__projects__main__wrapper__div2,
+    .portfolio__projects__main__wrapper__div3{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .portfolio__projects__main__wrapper__div1_sec2,
+    .portfolio__projects__main__wrapper__div2_sec2,
+    .portfolio__projects__main__wrapper__div3_sec2 {
+        margin: 1rem 0;
+        width: 90%;
+    }
+    .portfolio__projects__main__wrapper__div1_sec2 p,
+    .portfolio__projects__main__wrapper__div2_sec2 p,
+    .portfolio__projects__main__wrapper__div3_sec2 p {
+        margin: 3rem 0;
+        width: 90%;
+    }
+}

@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
+.h1 {
+    color: var(--color-blue);
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    margin-left: 2rem;
+    font-size: 15px;
+    font-family: "Poppins";
+}
+
+.cursor {
+    border-left: .1em solid var(--color-blue);;
+    animation: blink .7s steps(1) infinite;
+}
+
+.typing {
+    color: var(--color-blue);;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
