@@ -6,6 +6,7 @@
     background-size: cover;
     background-position: center center;
     height: 100vh;
+    position: relative;
 }
 
 .portfolio__services__main__wrapper{

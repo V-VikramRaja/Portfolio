@@ -191,6 +191,9 @@
 }
 
 @media screen and (max-width: 450px) {
+    .portfolio__header__main {
+        height: 100vh;
+    }
     .portfolio__header-img {
         display: none;
     }
