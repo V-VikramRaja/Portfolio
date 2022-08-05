@@ -197,15 +197,16 @@
         position: relative;
     }
     .portfolio__contact__form__name{
+        margin-top: 30px;
         position: absolute;  
-        top: -50px;
+        top: -90px;
     }
     .portfolio__contact__form__email {
         position: absolute;  
-        top: 60px; 
+        top: 90px; 
     }
     .portfolio__contact__form__message {
         position: absolute;
-        top: -90px;
+        top: -70px;
     }
 }
