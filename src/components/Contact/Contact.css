@@ -189,4 +189,14 @@
     .portfolio__contact__form__main__container input {  
         width: 300px !important;
     }
+
+    .portfolio__contact__form__name{
+        margin-top: 30px;
+    }
+    .portfolio__contact__form__email {
+        margin-top: 30px;
+    }
+    .portfolio__contact__form__message {
+        margin-top: 30px;
+    }
 }
