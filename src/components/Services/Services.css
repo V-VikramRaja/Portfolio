@@ -100,6 +100,7 @@
 @media screen and (max-width: 450px) {
     .portfolio__services__main {
         height: auto !important;
+        margin-top: 50px;
     }
     .portfolio__services__main__wrapper {
         display: flex;

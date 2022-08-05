@@ -282,4 +282,12 @@
         align-items: center;
         justify-content: center;
     }
+    .portfolio__header__email__form{
+        position: relative;
+    }
+    .portfolio__header__form__email{
+        position: absolute;
+        top: -40px;
+    }
+
 }
