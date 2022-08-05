@@ -119,6 +119,12 @@
     margin-bottom: 15px
 }
 
+.portfolio__contact__form__name input::placeholder,
+.portfolio__contact__form__email input::placeholder,
+.portfolio__contact__form__message input::placeholder {
+    color: var(--color-input);
+}
+
 .portfolio__contact__form__name input,
 .portfolio__contact__form__email input,
 .portfolio__contact__form__message input {
@@ -180,7 +186,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
-        height: 100vh;
+        height: 140vh;
     }
     .portfolio__contact__main__topPart__say{
         width: 80%;
@@ -190,20 +196,30 @@
         width: 300px !important;
     }
 
-    .portfolio__contact__form__name input
-    .portfolio__contact__form__email input
+    .portfolio__contact__form__name input,
+    .portfolio__contact__form__email input,
     .portfolio__contact__form__message input{
-        margin-bottom: 100px;
+        /* margin: 50px 0;   */
         overflow: hidden;
     }
 
-    .portfolio__contact__form__name input:focus{
-        margin-bottom: 150px;
+    .portfolio__contact__form__name input::placeholder,
+    .portfolio__contact__form__email input::placeholder,
+    .portfolio__contact__form__message input::placeholder {
+        color: var(--color-btn);
+        font-weight: bold;
     }
-    .portfolio__contact__form__email input:focus {
-        margin-bottom: 150px;
+
+    .portfolio__contact__form__name label,
+    .portfolio__contact__form__email label,
+    .portfolio__contact__form__message label {
+        display: none;
     }
+
+    .portfolio__contact__form__name input:focus,
+    .portfolio__contact__form__email input:focus,
     .portfolio__contact__form__message input:focus {
-        margin-bottom: 150px;
+        margin-top: 150px;
+        overflow: hidden;
     }
 }

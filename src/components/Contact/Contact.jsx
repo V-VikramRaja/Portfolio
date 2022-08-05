@@ -52,20 +52,20 @@ function Contact() {
 
 
             <div className="portfolio__contact__form__name" >
-              <input type="text" name="name" value={inputName} required onChange={nameChangeHandler} />
+              <input type="text" name="name" value={inputName} placeholder=" Your Name" required onChange={nameChangeHandler} />
               <label htmlFor="name">Your Name:</label>
             </div>
 
 
             <div className="portfolio__contact__form__email" >
-              <input type="email" name="useremail" required value={inputEmail} onChange={emailChangeHandler} />
+              <input type="email" name="useremail" required value={inputEmail} placeholder=" Your Email" onChange={emailChangeHandler} />
               <label htmlFor="email">Your E-mail:</label>
             </div>
             
           </div>
           <div className="portfolio__contact__form__sec__container" >
             <div className="portfolio__contact__form__message" >
-              <input type="text" name="message" required value={inputMsg} onChange={msgChangeHandler} />
+              <input type="text" name="message" required value={inputMsg} placeholder=" Your message" onChange={msgChangeHandler} />
               <label htmlFor="message" >Your Message:</label>
             </div>
           <button className={mailSent?"contact__email__sent portfolio__contact__form__submit__btn":
