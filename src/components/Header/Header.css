@@ -118,6 +118,11 @@
     background-color: var(--color-input);
     color: white;
     padding-left: 20px;
+    position: absolute;
+    left: -160px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
 }
 
 .portfolio__header__form__email input::placeholder {
@@ -191,9 +196,6 @@
 }
 
 @media screen and (max-width: 450px) {
-    .portfolio__header__main {
-        height: 100vh;
-    }
     .portfolio__header-img {
         display: none;
     }
