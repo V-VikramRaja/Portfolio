@@ -7,7 +7,8 @@ import square1 from '../../utils/Images/fillers/square1.png';
 import triangle1 from '../../utils/Images/fillers/tri1.png';
 import triangle2 from '../../utils/Images/fillers/tri2.png';
 import multipleSquare from '../../utils/Images/fillers/Multiple-squares.png'
-import myImg from '../../utils/Images/header-img.png'
+import myImg from '../../utils/Images/header-img.png';
+import emailjs from 'emailjs-com';
 
 function Header() {
   const [headerEmail, setHeaderEmail] = useState('');
@@ -15,10 +16,17 @@ function Header() {
   const headerEmailChangeHandler = (evt) => {
     setHeaderEmail(evt.target.value);
   }
-  const headerFormSubmitHandler = (evt) => {
+  const headerFormSubmitHandler = async(evt) => {
     evt.preventDefault();
-    console.log(headerEmail);
+    await emailjs.sendForm('service_0x6ylnk','template_i3t2zl7',evt.target,'hdWwZr4b7-3HIqfTl')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+
     setMailSent(true);
+    setHeaderEmail('');
   }
   
 
@@ -46,7 +54,7 @@ function Header() {
             <div>
               <form onSubmit={headerFormSubmitHandler} className="portfolio__header__email__form" >
                 <div className="portfolio__header__form__email" >
-                  <input type="email" name="E-mail" required value={headerEmail} onChange={headerEmailChangeHandler} />
+                  <input type="email" name="useremail" required value={headerEmail} onChange={headerEmailChangeHandler} />
                   <label htmlFor="email">Your E-mail:</label>
                 </div>
                 <button className={mailSent? 'portfolio__header__email__sent': ''} >{!mailSent? "Get Started": "Done"}</button>
