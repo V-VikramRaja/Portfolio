@@ -44,10 +44,10 @@
 }
 
 .portfolio__contact__form__main {
-  /* height: 700px; */
+  height: 700px;
   display: flex;
   flex-direction: column;
-  align-items: space-around;
+  align-items: space-evenly;
   justify-content: space-around;
 }
 
@@ -193,9 +193,13 @@
   }
 } */
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 670px) {
   .portfolio__contact__main {
     margin-top: 800px;
+  }
+  .portfolio__contact__form__main {
+    align-items: center;
+    justify-content: center;
   }
   .portfolio__contact__form__main__container {
     display: flex;
