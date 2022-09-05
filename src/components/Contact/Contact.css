@@ -181,22 +181,13 @@
   color: var(--color-purple);
 }
 
-/* @media screen and (max-width: 650px) {
+@media screen and (max-width: 650px) {
   .portfolio__contact__main {
     margin-top: 800px;
   }
-  .portfolio__contact__form__name input,
-  .portfolio__contact__form__email input,
-  .portfolio__contact__form__message input {
-    width: 70% !important;
-    overflow: hidden;
-  }
-} */
+}
 
 @media screen and (max-width: 670px) {
-  .portfolio__contact__main {
-    margin-top: 800px;
-  }
   .portfolio__contact__form__main {
     align-items: center;
     justify-content: center;
