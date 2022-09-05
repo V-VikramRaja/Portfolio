@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 * {
   margin: 0;
@@ -12,36 +12,44 @@ body {
   height: auto;
   overflow: auto;
 }
-body{
-  background-color: #10041A;
+body {
+  background-color: #10041a;
 }
 html {
   overflow-y: scroll;
 }
-a{
+a {
   all: unset;
 }
 
 :root {
-  --font-family: 'Poppins', sans-serif;
+  --font-family: "Poppins", sans-serif;
 
+  --gradient-text1: -webkit-linear-gradient(
+    89.97deg,
+    #ae67fa 1.84%,
+    #f49867 102.67%
+  );
+  --gradient-text2: -webkit-linear-gradient(
+    89.97deg,
+    #0992df 100%,
+    #a550b2 100%
+  );
+  --gradient-bar: -webkit-linear-gradient(
+    103.22deg,
+    #ae67fa -13.86%,
+    #f49867 99.55%
+  );
 
-  --gradient-text1: -webkit-linear-gradient(89.97deg,
-      #AE67FA 1.84%,
-      #F49867 102.67%);
-  --gradient-text2: -webkit-linear-gradient(89.97deg,
-          #0992DF 100%,
-          #A550B2 100%);
-  --gradient-bar: -webkit-linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
-
-  --color-bg: #10041A;
-  --color-footer: #1C092C;
-  --color-btn: #9F53B5;
-  --color-text: #FEEDB5;
-  --color-input: #41344D;
-  --color-blue: #2189D9;
+  --color-bg: #10041a;
+  --color-footer: #1c092c;
+  --color-purple: #c985ff;
+  --color-yellow: #f6d799;
+  --color-input: #41344d;
+  --color-blue: #2189d9;
+  --color-white: #f8f2fd;
 }
 
-p{
+p {
   color: white;
 }

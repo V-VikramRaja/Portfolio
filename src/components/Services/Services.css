@@ -1,113 +1,142 @@
 .portfolio__services__main {
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(16, 4, 26, 1);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-    position: relative;
+  min-height: 1000px;
+  width: 100%;
+  background-color: rgba(16, 4, 26, 1);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.portfolio__services__main__wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: space-between;
+.portfolio__services__main__Wrapper__top,
+.portfolio__services__main__Wrapper__bottom {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 400px;
+  background: radial-gradient(
+        circle at 100% 100%,
+        #41344d 0,
+        #41344d 45px,
+        transparent 45px
+      )
+      0% 0%/50px 50px no-repeat,
+    radial-gradient(circle at 0 100%, #41344d 0, #41344d 45px, transparent 45px)
+      100% 0%/50px 50px no-repeat,
+    radial-gradient(circle at 100% 0, #41344d 0, #41344d 45px, transparent 45px)
+      0% 100%/50px 50px no-repeat,
+    radial-gradient(circle at 0 0, #41344d 0, #41344d 45px, transparent 45px)
+      100% 100%/50px 50px no-repeat,
+    linear-gradient(#41344d, #41344d) 50% 50% / calc(100% - 10px)
+      calc(100% - 100px) no-repeat,
+    linear-gradient(#41344d, #41344d) 50% 50% / calc(100% - 99px)
+      calc(100% - 10px) no-repeat,
+    linear-gradient(90deg, #f6d799 0%, #e03fb3 50%, #a34cdb 100%);
+  border-radius: 50px;
+  box-sizing: content-box;
+}
+.portfolio__services__main__img__design,
+.portfolio__services__main__img__development {
+  width: 25vw;
+  height: auto;
 }
 
-.portfolio__services__main__right__container,
-.portfolio__services__main__left__container1{
-    width: 405px;
-    height: 513px;
+.portfolio__services__main__Wrapper__bottom__left,
+.portfolio__services__main__Wrapper__top__left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 400px;
 }
 
-
-.portfolio__services__main__left__container1,
-.portfolio__services__main__right__container {
-    background-color: var(--color-blue);
+.portfolio__services__main__top__design,
+.portfolio__services__main__bottom__development {
+  font-family: "Poppins";
+  font-size: 35px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: var(--color-purple);
+  font-weight: 400;
 }
 
-.portfolio__services__main__left__design,
-.portfolio__services__main__left__design__text,
-.portfolio__services__main__right__development,
-.portfolio__services__main__right__development__text{
-    padding: 5px;
+.portfolio__services__main__top__design__text,
+.portfolio__services__main__bottom__development__text {
+  font-family: "Poppins";
+  font-size: 15px;
+  color: var(--color-purple);
 }
 
-.portfolio__services__main__left__design,
-.portfolio__services__main__right__development{
-    font-family: 'Poppins';
-    font-size: 35px;
-    line-height: 42px;
-    text-transform: uppercase;
-    text-decoration: underline;
+/* ------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1080px) {
+  .portfolio__services__main {
+    height: auto;
+  }
+
+  .portfolio__services__main__left__container__img img,
+  .portfolio__services__main__right__container__img img {
+    width: 300px;
+    height: auto;
+  }
+
+  .portfolio__services__main__left__design,
+  .portfolio__services__main__right__development {
+    font-family: "Poppins";
+    font-size: 30px;
+  }
+
+  .portfolio__services__main__left__design__text,
+  .portfolio__services__main__right__development__text {
+    font-family: "Poppins";
+    font-size: 14px;
     font-weight: 400;
-}
+  }
 
-.portfolio__services__main__left__design__text,
-.portfolio__services__main__right__development__text{
-    font-family: 'Poppins';
-}
-
-.portfolio__services__main__right__container{
-    margin-top: 70px;
-}
-
-@media screen and (max-width: 1080px ){
-
-    .portfolio__services__main {
-        height: 100vh;
-    }
-
-    .portfolio__services__main__right__container,
-    .portfolio__services__main__left__container1 {
-        width: 300px;
-    }
-
-    .portfolio__services__main__left__container__img img,
-    .portfolio__services__main__right__container__img img {
-        width: 300px;
-        height: auto;
-    }
-
-    .portfolio__services__main__left__design,
-    .portfolio__services__main__right__development {
-        font-family: 'Poppins';
-        font-size: 30px;
-    }
-
-    .portfolio__services__main__left__design__text,
-    .portfolio__services__main__right__development__text {
-        font-family: 'Poppins';
-        font-size: 14px;
-        font-weight: 400;
-    }
-
-    .portfolio__services__main__left__container{
-        margin: unset;
-        width: 350px;
-        height: 30vh;
-        overflow-wrap: break-word;
-    }
+  .portfolio__services__main__left__container {
+    margin: unset;
+    width: 350px;
+    height: 300px;
+    overflow-wrap: break-word;
+  }
 }
 
 @media screen and (max-width: 780px) {
-    .portfolio__services__main__left__container{
-        display: none;
-    }
+  .portfolio__services__main__img__design,
+  .portfolio__services__main__img__development {
+    width: 35vw;
+  }
 }
 
-@media screen and (max-width: 450px) {
-    .portfolio__services__main {
-        height: auto !important;
-        margin-top: 50px;
-        position: relative;
-    }
-    .portfolio__services__main__wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+@media screen and (max-width: 480px) {
+  .portfolio__services__main__Wrapper__top,
+  .portfolio__services__main__Wrapper__bottom {
+    flex-direction: column;
+    height: auto;
+    margin: 2rem 0;
+  }
+
+  .portfolio__services__main__img__design,
+  .portfolio__services__main__img__development {
+    width: 65vw;
+    margin: 2rem 0;
+  }
+
+  .portfolio__services__main__Wrapper__top__left,
+  .portfolio__services__main__Wrapper__bottom__left {
+    width: 65vw;
+  }
+
+  .portfolio__services__main__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
