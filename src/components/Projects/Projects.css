@@ -60,15 +60,15 @@
   font-weight: 400;
 }
 
-@media screen and (max-width: 680px) {
+/* @media screen and (max-width: 680px) {
   .portfolio__projects__main__wrapper__div1_sec1 img,
   .portfolio__projects__main__wrapper__div2_sec1 img,
   .portfolio__projects__main__wrapper__div3_sec1 img {
     width: 50vw;
   }
-}
+} */
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
   .portfolio__projects__main__wrapper__div1,
   .portfolio__projects__main__wrapper__div2,
   .portfolio__projects__main__wrapper__div3 {
