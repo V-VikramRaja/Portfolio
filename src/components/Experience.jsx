@@ -6,10 +6,10 @@ const Experience = () => {
     {
       id: 1,
       role: "Founding Engineer & Senior Architect",
-      company: "KAMUIT",
+      company: "KAMUIT (Startup / Product Team)",
       location: "Dallas, TX",
       period: "Mar 2025 - Present",
-      type: "Full-time",
+      type: "Part-time",
       description: [
         "Designed geospatial ETL pipelines with Python, FastAPI, PostgreSQL/PostGIS, and Uber H3 indexing, powering detour-aware ride matching for 50K+ trips. Implemented spatial joins, polyline overlap, and ETA-based detour scoring, shrinking driver pools 65%, cutting detours 22%, with <500ms latency. Deployed with Docker/Kubernetes and orchestrated workflows via Airflow + Celery",
         "Built fault-tolerant streaming infra with multi-passenger batching heuristics, Redis queues, distributed locks, and Stripe Connect APIs, reducing fallback recovery 37% and achieving 99%+ uptime in MVP demos"
