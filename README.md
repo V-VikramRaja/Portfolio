@@ -1,70 +1,257 @@
-# Getting Started with Create React App
+# Vikram Raja - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with React and custom CSS showcasing your experience as a Full-Stack AI Engineer.
 
-## Available Scripts
+## 🎨 Features
 
-In the project directory, you can run:
+- **Modern Design**: Clean, professional UI inspired by contemporary portfolio designs
+- **Easy Theme Customization**: Change the entire color scheme by modifying a single CSS variable
+- **Fully Responsive**: Works beautifully on desktop, tablet, and mobile devices
+- **Performance Optimized**: Fast loading with smooth animations
+- **Component-Based Architecture**: Easy to maintain and extend
 
-### `npm start`
+## 🚀 Quick Start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Navigate to the project directory:
+```bash
+cd portfolio
+```
 
-### `npm test`
+2. Install dependencies:
+```bash
+npm install
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Start the development server:
+```bash
+npm start
+```
 
-### `npm run build`
+The website will open automatically at `http://localhost:3000`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Build for Production
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm run build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This creates an optimized production build in the `build` folder.
 
-### `npm run eject`
+## 🎨 Customizing the Theme Color
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**This is the best part!** You can change the entire color scheme of the website by modifying just ONE line of code.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Open `src/App.css`
+2. Find line 2:
+```css
+--primary-color: #FDB915;
+```
+3. Change `#FDB915` to any color you like:
+   - `#3B82F6` for blue
+   - `#10B981` for green
+   - `#EF4444` for red
+   - `#8B5CF6` for purple
+   - Or any hex color code you prefer!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The entire website theme will automatically update!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📁 Project Structure
 
-## Learn More
+```
+portfolio/
+├── public/
+│   └── index.html          # HTML template
+├── src/
+│   ├── components/         # React components
+│   │   ├── Sidebar.jsx     # Sidebar with skills
+│   │   ├── Hero.jsx        # Hero section
+│   │   ├── About.jsx       # About section
+│   │   ├── Experience.jsx  # Work experience
+│   │   ├── Projects.jsx    # Projects showcase
+│   │   └── Contact.jsx     # Contact form
+│   ├── App.jsx            # Main app component
+│   ├── App.css            # Global styles & theme
+│   └── index.js           # React entry point
+└── package.json           # Dependencies
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ✏️ Customizing Content
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Personal Information
 
-### Code Splitting
+Edit the following files to update your information:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Sidebar** (`src/components/Sidebar.jsx`):
+- Profile name and title
+- Contact information
+- Skills and proficiency levels
+- Social media links
 
-### Analyzing the Bundle Size
+**Hero Section** (`src/components/Hero.jsx`):
+- Name and title
+- Introduction text
+- Stats (years of experience, projects, etc.)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**About Section** (`src/components/About.jsx`):
+- Bio and description
+- Education details
+- Core expertise tags
 
-### Making a Progressive Web App
+**Experience** (`src/components/Experience.jsx`):
+- Add/edit job positions
+- Update descriptions and achievements
+- Modify skills tags
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Projects** (`src/components/Projects.jsx`):
+- Add/edit project cards
+- Update GitHub links
+- Modify project descriptions
 
-### Advanced Configuration
+**Contact** (`src/components/Contact.jsx`):
+- Email and phone number
+- Social media links
+- Contact form settings
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🎯 Key Customization Points
 
-### Deployment
+### Adding a Profile Photo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Replace the placeholder initials in:
+- `src/components/Sidebar.jsx` (line ~26)
+- `src/components/Hero.jsx` (line ~51)
 
-### `npm run build` fails to minify
+Change from:
+```jsx
+<div className="profile-placeholder">VR</div>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To:
+```jsx
+<img src="/path/to/your/photo.jpg" alt="Vikram Raja" />
+```
+
+### Modifying Skills
+
+Edit the `skills` object in `src/components/Sidebar.jsx` (starting at line ~7):
+
+```javascript
+const skills = {
+  "Category Name": [
+    { name: "Skill Name", level: 90 },
+    // Add more skills...
+  ],
+  // Add more categories...
+};
+```
+
+### Adding More Projects
+
+In `src/components/Projects.jsx`, add new objects to the `projects` array:
+
+```javascript
+{
+  id: 3,
+  title: "Your Project Title",
+  client: "Client Name",
+  period: "Start - End Date",
+  description: "Project description...",
+  highlights: ["Achievement 1", "Achievement 2"],
+  technologies: ["Tech1", "Tech2"],
+  github: "https://github.com/...",
+  icon: "🚀"
+}
+```
+
+## 🎨 Styling Customization
+
+All CSS is custom-written and uses CSS variables for easy theming. Key style files:
+
+- `App.css`: Global styles and theme variables
+- `Sidebar.css`: Sidebar styling
+- `Hero.css`: Hero section styling
+- `About.css`: About section styling
+- `Experience.css`: Experience timeline styling
+- `Projects.css`: Projects grid styling
+- `Contact.css`: Contact form and footer styling
+
+### CSS Variables
+
+Edit these in `src/App.css` to customize:
+
+```css
+:root {
+  --primary-color: #FDB915;        /* Main theme color */
+  --primary-light: #ffd966;        /* Light variant */
+  --primary-dark: #e6a500;         /* Dark variant */
+  --text-primary: #2d3748;         /* Main text color */
+  --text-secondary: #718096;       /* Secondary text */
+  --bg-white: #ffffff;             /* White background */
+  --bg-light: #f7fafc;             /* Light background */
+}
+```
+
+## 📱 Responsive Design
+
+The website is fully responsive with breakpoints at:
+- Desktop: > 1024px
+- Tablet: 768px - 1024px
+- Mobile: < 768px
+
+## 🚀 Deployment
+
+### Deploy to GitHub Pages
+
+1. Install gh-pages:
+```bash
+npm install --save-dev gh-pages
+```
+
+2. Add to `package.json`:
+```json
+"homepage": "https://yourusername.github.io/portfolio",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+```
+
+3. Deploy:
+```bash
+npm run deploy
+```
+
+### Deploy to Netlify/Vercel
+
+Simply connect your GitHub repository and these platforms will automatically build and deploy your site.
+
+## 🔧 Tech Stack
+
+- **React 18** - UI framework
+- **Custom CSS** - Styling (no Bootstrap, Tailwind, or other CSS frameworks)
+- **CSS Variables** - For theming
+- **CSS Grid & Flexbox** - Layout
+- **CSS Animations** - Smooth transitions
+
+## 📝 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## 📄 License
+
+This project is open source and available for personal use.
+
+## 👤 Author
+
+**Vikram Raja**
+- Email: vvraja2301@gmail.com
+- LinkedIn: [linkedin.com/in/vikram-raja23](https://www.linkedin.com/in/vikram-raja23/)
+- Portfolio: [kaushik0802.github.io](https://kaushik0802.github.io/Kaushik0802/)
+
+---
+
+Built with ❤️ using React and Custom CSS
