@@ -1,257 +1,94 @@
-# Vikram Raja - Portfolio Website
+# 👨‍💻 VIKRAM RAJA
 
-A modern, responsive portfolio website built with React and custom CSS showcasing your experience as a Full-Stack AI Engineer.
-
-## 🎨 Features
-
-- **Modern Design**: Clean, professional UI inspired by contemporary portfolio designs
-- **Easy Theme Customization**: Change the entire color scheme by modifying a single CSS variable
-- **Fully Responsive**: Works beautifully on desktop, tablet, and mobile devices
-- **Performance Optimized**: Fast loading with smooth animations
-- **Component-Based Architecture**: Easy to maintain and extend
-
-## 🚀 Quick Start
-
-### Installation
-
-1. Navigate to the project directory:
-```bash
-cd portfolio
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm start
-```
-
-The website will open automatically at `http://localhost:3000`
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-This creates an optimized production build in the `build` folder.
-
-## 🎨 Customizing the Theme Color
-
-**This is the best part!** You can change the entire color scheme of the website by modifying just ONE line of code.
-
-1. Open `src/App.css`
-2. Find line 2:
-```css
---primary-color: #FDB915;
-```
-3. Change `#FDB915` to any color you like:
-   - `#3B82F6` for blue
-   - `#10B981` for green
-   - `#EF4444` for red
-   - `#8B5CF6` for purple
-   - Or any hex color code you prefer!
-
-The entire website theme will automatically update!
-
-## 📁 Project Structure
-
-```
-portfolio/
-├── public/
-│   └── index.html          # HTML template
-├── src/
-│   ├── components/         # React components
-│   │   ├── Sidebar.jsx     # Sidebar with skills
-│   │   ├── Hero.jsx        # Hero section
-│   │   ├── About.jsx       # About section
-│   │   ├── Experience.jsx  # Work experience
-│   │   ├── Projects.jsx    # Projects showcase
-│   │   └── Contact.jsx     # Contact form
-│   ├── App.jsx            # Main app component
-│   ├── App.css            # Global styles & theme
-│   └── index.js           # React entry point
-└── package.json           # Dependencies
-```
-
-## ✏️ Customizing Content
-
-### Personal Information
-
-Edit the following files to update your information:
-
-**Sidebar** (`src/components/Sidebar.jsx`):
-- Profile name and title
-- Contact information
-- Skills and proficiency levels
-- Social media links
-
-**Hero Section** (`src/components/Hero.jsx`):
-- Name and title
-- Introduction text
-- Stats (years of experience, projects, etc.)
-
-**About Section** (`src/components/About.jsx`):
-- Bio and description
-- Education details
-- Core expertise tags
-
-**Experience** (`src/components/Experience.jsx`):
-- Add/edit job positions
-- Update descriptions and achievements
-- Modify skills tags
-
-**Projects** (`src/components/Projects.jsx`):
-- Add/edit project cards
-- Update GitHub links
-- Modify project descriptions
-
-**Contact** (`src/components/Contact.jsx`):
-- Email and phone number
-- Social media links
-- Contact form settings
-
-## 🎯 Key Customization Points
-
-### Adding a Profile Photo
-
-Replace the placeholder initials in:
-- `src/components/Sidebar.jsx` (line ~26)
-- `src/components/Hero.jsx` (line ~51)
-
-Change from:
-```jsx
-<div className="profile-placeholder">VR</div>
-```
-
-To:
-```jsx
-<img src="/path/to/your/photo.jpg" alt="Vikram Raja" />
-```
-
-### Modifying Skills
-
-Edit the `skills` object in `src/components/Sidebar.jsx` (starting at line ~7):
-
-```javascript
-const skills = {
-  "Category Name": [
-    { name: "Skill Name", level: 90 },
-    // Add more skills...
-  ],
-  // Add more categories...
-};
-```
-
-### Adding More Projects
-
-In `src/components/Projects.jsx`, add new objects to the `projects` array:
-
-```javascript
-{
-  id: 3,
-  title: "Your Project Title",
-  client: "Client Name",
-  period: "Start - End Date",
-  description: "Project description...",
-  highlights: ["Achievement 1", "Achievement 2"],
-  technologies: ["Tech1", "Tech2"],
-  github: "https://github.com/...",
-  icon: "🚀"
-}
-```
-
-## 🎨 Styling Customization
-
-All CSS is custom-written and uses CSS variables for easy theming. Key style files:
-
-- `App.css`: Global styles and theme variables
-- `Sidebar.css`: Sidebar styling
-- `Hero.css`: Hero section styling
-- `About.css`: About section styling
-- `Experience.css`: Experience timeline styling
-- `Projects.css`: Projects grid styling
-- `Contact.css`: Contact form and footer styling
-
-### CSS Variables
-
-Edit these in `src/App.css` to customize:
-
-```css
-:root {
-  --primary-color: #FDB915;        /* Main theme color */
-  --primary-light: #ffd966;        /* Light variant */
-  --primary-dark: #e6a500;         /* Dark variant */
-  --text-primary: #2d3748;         /* Main text color */
-  --text-secondary: #718096;       /* Secondary text */
-  --bg-white: #ffffff;             /* White background */
-  --bg-light: #f7fafc;             /* Light background */
-}
-```
-
-## 📱 Responsive Design
-
-The website is fully responsive with breakpoints at:
-- Desktop: > 1024px
-- Tablet: 768px - 1024px
-- Mobile: < 768px
-
-## 🚀 Deployment
-
-### Deploy to GitHub Pages
-
-1. Install gh-pages:
-```bash
-npm install --save-dev gh-pages
-```
-
-2. Add to `package.json`:
-```json
-"homepage": "https://yourusername.github.io/portfolio",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
-```
-
-3. Deploy:
-```bash
-npm run deploy
-```
-
-### Deploy to Netlify/Vercel
-
-Simply connect your GitHub repository and these platforms will automatically build and deploy your site.
-
-## 🔧 Tech Stack
-
-- **React 18** - UI framework
-- **Custom CSS** - Styling (no Bootstrap, Tailwind, or other CSS frameworks)
-- **CSS Variables** - For theming
-- **CSS Grid & Flexbox** - Layout
-- **CSS Animations** - Smooth transitions
-
-## 📝 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-
-## 📄 License
-
-This project is open source and available for personal use.
-
-## 👤 Author
-
-**Vikram Raja**
-- Email: vvraja2301@gmail.com
-- LinkedIn: [linkedin.com/in/vikram-raja23](https://www.linkedin.com/in/vikram-raja23/)
-- Portfolio: [kaushik0802.github.io](https://kaushik0802.github.io/Kaushik0802/)
+**Full Stack AI Engineer | Machine Learning & MLOps | FastAPI | AWS | React.js**  
+📍 Chennai, India • ✉️ [vvraja2301@gmail.com](mailto:vvraja2301@gmail.com) • 🌐 [Portfolio](https://kaushik0802.github.io/Kaushik0802/) • [LinkedIn](https://www.linkedin.com/in/vikram-raja23/)
 
 ---
 
-Built with ❤️ using React and Custom CSS
+## 🚀 About Me
+
+I’m a **Full Stack AI Engineer** passionate about building end-to-end AI-driven systems — from model training and automation pipelines to full-scale deployment on the cloud.
+
+My work bridges **AI, software architecture, and real-world scalability**, enabling intelligent automation in ERP systems, logistics platforms, and data-driven products. I love solving complex engineering problems with clean, modular design and performance-focused development.
+
+---
+
+## 💼 Experience
+
+### 🧠 Full-stack AI Engineer (Python) — *Intemo Technologies Pvt*  
+**Apr 2025 – Present | Chennai, TN**
+- Automated manual ERP data entry using **OCR, LLMs (ChatGPT & Gemini)**, and **FastAPI**, transforming email-based document workflows into structured JSON APIs.  
+- Built and deployed AI automation pipelines on **AWS (Docker + CI/CD)** with asynchronous processing for multi-tenant clients.  
+- Integrated **Selenium/Playwright** and **PostgreSQL** for end-to-end data flow, eliminating human input.
+
+### 📊 ML and Model Engineer — *Intemo Technologies Pvt*  
+**Jul 2024 – Apr 2025 | Chennai, TN**
+- Developed **SVR models** predicting flight departure/arrival times (ETD/ETA) using operational data, improving scheduling accuracy.  
+- Handled the complete ML lifecycle: preprocessing, hyperparameter tuning, evaluation (MAE, R²), and deployment on AWS EC2/S3.
+
+### 🧩 Full Stack Developer II — *Intemo Technologies Pvt*  
+**Aug 2023 – Jul 2024 | Chennai, TN**
+- Built a **live container tracking system** with real-time logistics milestones using **Java Spring Boot, PostgreSQL, Kafka Debezium, and ZooKeeper**.  
+- Took ownership of AWS deployments (EC2 + Docker) and developed **80% of the React.js frontend**, delivering responsive tracking dashboards.
+
+### 🌍 Founding Engineer & Senior Architect — *KAMUIT*  
+**Mar 2025 – Present | Dallas, TX**
+- Designed **geospatial ETL pipelines** with FastAPI, PostGIS, and Uber H3 indexing for detour-aware ride matching.  
+- Built **fault-tolerant streaming infrastructure** using Redis queues, distributed locks, and Stripe Connect APIs — achieving 99%+ uptime during MVP phase.
+
+---
+
+## 🧪 Projects
+
+### 🧬 [Understanding Disease Heterogeneity](https://github.com/Kaushik0802/-Understanding-Disease-Heterogeneity-IGE-Hackathon-2025)
+*Jan 2025 – May 2025*  
+Performed PCA/Autoencoder-based clustering on 50K+ ALS patient records, reducing features 120→22 (82%) while retaining 93% variance.  
+Achieved silhouette >0.71 across 3 clusters and visualized results using Plotly dashboards for clinical insights.
+
+### 🎨 [Image Diffusion for Synthetic Data Generation](https://github.com/Kaushik0802/Custom-Diffusion-Model-for-Image-Generation)
+*May 2025 – Oct 2025*  
+Developed DDPM-based diffusion model with attention-enhanced U-Net; reduced reconstruction error by 21% and latent size by 78% compared to GANs.  
+Deployed GPU-powered **Streamlit app** for image sampling (60 images in 4 minutes, FID 12.4, IS 4.8).
+
+---
+
+## ⚙️ Technical Skills
+
+**Languages & Frameworks:**  
+Python, Java, JavaScript, SQL, Spring Boot, FastAPI, Flask, Django, React.js, Node.js, Bash  
+
+**AI/ML Development:**  
+Deep Learning, Transformers, Diffusion Models, GANs, RAG, NLP, Time-Series, Anomaly Detection, Autoencoders, Clustering, Model Optimization (ONNX, CUDA)
+
+**MLOps & Deployment:**  
+AWS (EC2, S3, Lambda, ECR, CloudWatch), Docker, Kubernetes, Airflow, CI/CD, Model Serving (FastAPI + Gunicorn), OAuth2/JWT Security  
+
+**Data Engineering:**  
+PostgreSQL, MongoDB, Kafka, Debezium, Spark, Airflow, dbt, Snowflake, ETL/ELT Pipelines, Vector DBs (FAISS, ChromaDB, ElasticSearch)
+
+**Visualization & Analytics:**  
+Power BI, Tableau, Plotly, Matplotlib, Seaborn, Dash  
+
+**Dev Practices:**  
+Microservices, Distributed Systems, Unit Testing, API Design, Git, Agile/Scrum  
+
+---
+
+## 🎯 My Goals
+
+- Build **scalable AI-first applications** that combine deep learning, data engineering, and software craftsmanship.  
+- Continue advancing in **MLOps, Cloud AI Infrastructure, and System Design** for intelligent automation.  
+- Travel, learn, and contribute to the next wave of **AI-driven products** globally.
+
+---
+
+## 🧩 Let's Connect!
+
+📧 [vvraja2301@gmail.com](mailto:vvraja2301@gmail.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/vikram-raja23/)  
+🌐 [Portfolio](https://kaushik0802.github.io/Kaushik0802/)  
+💻 [GitHub](https://github.com/Kaushik0802)
+
+---
+
+> *“Build what others can’t even describe.”* — Vikram Raja
