@@ -101,12 +101,12 @@ const Projects = () => {
             container tracking systems, and AI-driven automation. Check out my GitHub for more!
           </p>
           <a 
-            href="https://kaushik0802.github.io/Kaushik0802/" 
+            href="https://www.linkedin.com/in/vikram-raja23/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="btn-primary"
           >
-            <span>Visit Portfolio</span>
+            <span>Visit My Linked In Portfolio</span>
             <span>🚀</span>
           </a>
         </div>

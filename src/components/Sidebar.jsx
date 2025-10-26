@@ -102,7 +102,6 @@ const Sidebar = ({ activeSection, scrollToSection }) => {
                 className={`nav-item ${activeSection === item.id ? 'active' : ''}`}
                 onClick={() => handleNavClick(item.id)}
               >
-                <span className="nav-icon">{item.icon}</span>
                 <span className="nav-label">{item.label}</span>
               </button>
             ))}
