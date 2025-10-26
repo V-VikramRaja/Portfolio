@@ -1,7 +1,7 @@
 # 👨‍💻 VIKRAM RAJA
 
 **Full Stack AI Engineer | Machine Learning & MLOps | FastAPI | AWS | React.js**  
-📍 Chennai, India • ✉️ [vvraja2301@gmail.com](mailto:vvraja2301@gmail.com) • 🌐 [Portfolio](https://kaushik0802.github.io/Kaushik0802/) • [LinkedIn](https://www.linkedin.com/in/vikram-raja23/)
+📍 Chennai, India • ✉️ [vvraja2301@gmail.com](mailto:vvraja2301@gmail.com) • 🌐 [Portfolio](https://vikram-raja-portfolio.vercel.app/) • [LinkedIn](https://www.linkedin.com/in/vikram-raja23/)
 
 ---
 
@@ -86,7 +86,7 @@ Microservices, Distributed Systems, Unit Testing, API Design, Git, Agile/Scrum
 
 📧 [vvraja2301@gmail.com](mailto:vvraja2301@gmail.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/vikram-raja23/)  
-🌐 [Portfolio](https://kaushik0802.github.io/Kaushik0802/)  
+🌐 [Portfolio](https://vikram-raja-portfolio.vercel.app/)  
 💻 [GitHub](https://github.com/Kaushik0802)
 
 ---
