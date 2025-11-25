@@ -5,19 +5,6 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      role: "Founding Engineer & Senior Architect",
-      company: "KAMUIT (Startup / Product Team)",
-      location: "Dallas, TX",
-      period: "Mar 2025 - Present",
-      type: "Part-time",
-      description: [
-        "Designed geospatial ETL pipelines with Python, FastAPI, PostgreSQL/PostGIS, and Uber H3 indexing, powering detour-aware ride matching for 50K+ trips. Implemented spatial joins, polyline overlap, and ETA-based detour scoring, shrinking driver pools 65%, cutting detours 22%, with <500ms latency. Deployed with Docker/Kubernetes and orchestrated workflows via Airflow + Celery",
-        "Built fault-tolerant streaming infra with multi-passenger batching heuristics, Redis queues, distributed locks, and Stripe Connect APIs, reducing fallback recovery 37% and achieving 99%+ uptime in MVP demos"
-      ],
-      skills: ["Python", "FastAPI", "PostgreSQL", "PostGIS", "Docker", "Kubernetes", "Redis", "Stripe API", "Airflow"]
-    },
-    {
-      id: 2,
       role: "Full-stack AI Engineer (Python)",
       company: "Intemo Technologies Pvt",
       location: "Chennai, TN",
@@ -31,7 +18,7 @@ const Experience = () => {
       skills: ["Python", "FastAPI", "LLMs", "OCR", "AWS", "Docker", "PostgreSQL", "Selenium", "CI/CD"]
     },
     {
-      id: 3,
+      id: 2,
       role: "ML and Model Engineer",
       company: "Intemo Technologies Pvt",
       location: "Chennai, TN",
@@ -44,7 +31,7 @@ const Experience = () => {
       skills: ["Python", "Scikit-learn", "AWS EC2", "AWS S3", "Machine Learning", "SVR", "Data Engineering"]
     },
     {
-      id: 4,
+      id: 3,
       role: "Full Stack Developer II",
       company: "Intemo Technologies Pvt",
       location: "Chennai, TN",
