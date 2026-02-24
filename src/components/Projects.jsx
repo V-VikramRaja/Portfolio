@@ -5,36 +5,37 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Understanding Disease Heterogeneity",
+      title: "AI Document Q&A Engine with Evaluation Framework",
       client: "Personal Project",
-      period: "Jan 2025 - May 2025",
-      description: "Conducted EDA and multivariate analysis on 50K+ synthetic ALS patient records; applied PCA/autoencoders to cut features 120→22 (82% reduction, 93% variance retained) and clustered patients (silhouette >0.71) into 3 subtypes, deploying results in Plotly dashboards for clinician validation and designing subtype-targeted trials.",
+      period: "2025",
+      description: "Built a production-grade RAG-based document Q&A system supporting multi-format ingestion (PDF, DOCX, HTML) with semantic chunking, hybrid retrieval (dense + BM25), and context-aware answer generation using OpenAI GPT-4. Layered an automated evaluation pipeline using RAGAS to continuously measure faithfulness, answer relevancy, and context recall.",
       highlights: [
-        "82% feature reduction with 93% variance retained",
-        "Clustered 50K+ patients into 3 subtypes",
-        "Silhouette score > 0.71",
-        "Built interactive Plotly dashboards"
+        "Multi-format document ingestion (PDF, DOCX, HTML)",
+        "Hybrid retrieval with dense + BM25 for improved recall",
+        "RAGAS evaluation pipeline reducing hallucinations iteratively",
+        "Streaming responses with per-query latency observability",
+        "Token-usage tracking and monitoring dashboard"
       ],
-      technologies: ["Python", "Scikit-learn", "PCA", "Autoencoders", "Plotly", "Data Analysis"],
-      github: "https://github.com/Kaushik0802/-Understanding-Disease-Heterogeneity-IGE-Hackathon-2025",
-      icon: "🧬"
+      technologies: ["Python", "FastAPI", "LangChain", "RAG", "RAGAS", "OpenAI GPT-4", "Vector DB"],
+      github: "https://github.com/V-VikramRaja",
+      icon: "🤖"
     },
     {
       id: 2,
-      title: "Image Diffusion for Synthetic Data Generation",
+      title: "AI-Powered LinkedIn & Blog Post Generator",
       client: "Personal Project",
-      period: "May 2025 - Oct 2025",
-      description: "Built a DDPM pipeline with baseline and attention-enhanced U-Net (linear attention, ResNet blocks, group norm, SiLU), on 10K+ Oxford Flowers; used beta scheduling + sinusoidal embeddings to cut reconstruction error 21% and latent size 78% vs. GANs. Deployed via Streamlit GPU app for batch sampling (60 images in 4 mins); achieved FID 12.4 (–37%) and IS 4.8.",
+      period: "2025",
+      description: "Built a multi-stage LLM orchestration pipeline that generates LinkedIn posts and long-form blog articles from minimal prompts or reference documents using RAG-grounded generation with semantic chunking and vector retrieval. Designed prompt optimization workflows with tone adaptation and audience targeting; integrated coherence evaluation loops reducing factual inconsistencies across generated outputs.",
       highlights: [
-        "21% reduction in reconstruction error",
-        "78% smaller latent size vs GANs",
-        "FID score: 12.4 (-37% improvement)",
-        "Inception Score: 4.8",
-        "60 images generated in 4 minutes"
+        "Multi-stage LLM orchestration for long-form content generation",
+        "RAG-grounded generation from reference documents",
+        "Prompt optimization with tone adaptation and audience targeting",
+        "Coherence evaluation loops to reduce factual inconsistencies",
+        "Semantic chunking with vector retrieval pipeline"
       ],
-      technologies: ["Python", "PyTorch", "Diffusion Models", "U-Net", "Streamlit", "Computer Vision"],
-      github: "https://github.com/Kaushik0802/Custom-Diffusion-Model-for-Image-Generation",
-      icon: "🎨"
+      technologies: ["Python", "FastAPI", "LLMs", "RAG", "Vector DB", "Prompt Engineering", "LangChain"],
+      github: "https://github.com/V-VikramRaja",
+      icon: "✍️"
     }
   ];
 
@@ -42,7 +43,7 @@ const Projects = () => {
     <section className="projects section" id="projects">
       <h2 className="section-title">Featured Projects</h2>
       <p className="projects-subtitle">
-        Selected projects demonstrating expertise in AI/ML, data engineering, and full-stack development
+        Selected projects demonstrating how I integrate LLMs, RAG, and AI systems into production-ready applications
       </p>
       <div className="projects-grid">
         {projects.map((project, index) => (
@@ -97,8 +98,7 @@ const Projects = () => {
         <div className="more-projects-card card">
           <h3 className="more-title">More Projects</h3>
           <p className="more-description">
-            I've worked on numerous other projects involving real-time data pipelines, geospatial analytics, 
-            container tracking systems, and AI-driven automation. Check out my GitHub for more!
+            I've built other projects spanning event-driven backends, real-time tracking systems, and AI-powered automation tools. Check out my LinkedIn for more!
           </p>
           <a 
             href="https://www.linkedin.com/in/vikram-raja23/" 
