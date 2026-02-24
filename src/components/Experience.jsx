@@ -5,43 +5,45 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      role: "Full-stack AI Engineer (Python)",
-      company: "Intemo Technologies Pvt",
+      role: "Full Stack AI Engineer (Python)",
+      company: "Intemo Technologies Pvt Ltd",
       location: "Chennai, TN",
-      period: "Apr 2025 - Present",
+      period: "Sep 2024 - Present",
       type: "Full-time",
       description: [
-        "Automating complex manual data entry processes in ERP systems through AI-driven document processing, enhancing operational accuracy and efficiency for logistics & freight forwarding clients.",
-        "Developed an end-to-end automation pipeline using OCR, LLMs (ChatGPT & Gemini), and FastAPI that extracts, classifies, and structures emailed documents into JSON, auto-filling ERP fields via Selenium/Playwright with PostgreSQL integration—fully eliminating human input.",
-        "Deployed on AWS using Docker containers, CI/CD, and asynchronous queues to handle multi-tenant loads efficiently and maintain 99.9% uptime."
+        "Reduced manual ERP data entry by 70% by owning an end-to-end AI document intelligence platform that extracts, validates, and transforms unstructured logistics documents into structured ERP-ready outputs using OpenAI and Gemini models.",
+        "Cut LLM hallucination rate significantly by layering business-rule validation and guardrails on top of model outputs; implemented RAGAS-based evaluation and response consistency checks to maintain production-grade accuracy.",
+        "Achieved sub-2s inference latency for document processing by building async queue-based FastAPI pipelines with background workers, retry orchestration, and multi-tenant isolation handling concurrent ingestion at scale.",
+        "Improved pipeline observability by integrating structured logging, LLM trace monitoring, and per-request metrics to detect extraction drift and prompt degradation in production.",
+        "Reduced deployment friction by containerizing all AI services on AWS with Docker and CI/CD, enabling zero-downtime releases and reproducible inference environments."
       ],
-      skills: ["Python", "FastAPI", "LLMs", "OCR", "AWS", "Docker", "PostgreSQL", "Selenium", "CI/CD"]
+      skills: ["Python", "FastAPI", "OpenAI", "Gemini", "LangChain", "RAG", "RAGAS", "Docker", "AWS", "PostgreSQL", "CI/CD"]
     },
     {
       id: 2,
-      role: "ML and Model Engineer",
-      company: "Intemo Technologies Pvt",
+      role: "AI Systems Engineer",
+      company: "Intemo Technologies Pvt Ltd",
       location: "Chennai, TN",
-      period: "Jul 2024 - Apr 2025",
+      period: "Jul 2024 - Sep 2024",
       type: "Full-time",
       description: [
-        "Developed an SVR-based model for predicting flight departure and arrival times (ETD/ETA) using actual data (ATD/ATA), improving scheduling and reducing delays in aviation operations.",
-        "Performed full ML lifecycle — data ingestion, preprocessing, hyperparameter tuning, and deployment on AWS EC2/S3 — with model evaluation using MAE and R² metrics."
+        "Improved logistics ETA/ETD scheduling accuracy by 25% by productionizing ML prediction services built on engineered shipment features, deployed as low-latency REST APIs on AWS EC2/S3.",
+        "Accelerated model-to-production cycle by building reusable data-to-inference pipelines covering ingestion, preprocessing, feature engineering, and model serving — reducing new model deployment time by over 40%."
       ],
-      skills: ["Python", "Scikit-learn", "AWS EC2", "AWS S3", "Machine Learning", "SVR", "Data Engineering"]
+      skills: ["Python", "Scikit-learn", "FastAPI", "AWS EC2", "AWS S3", "ML Pipelines", "REST APIs"]
     },
     {
       id: 3,
-      role: "Full Stack Developer II",
-      company: "Intemo Technologies Pvt",
+      role: "Full Stack Developer",
+      company: "Intemo Technologies Pvt Ltd",
       location: "Chennai, TN",
       period: "Aug 2023 - Jul 2024",
       type: "Full-time",
       description: [
-        "Developed a live container tracking system delivering real-time logistics milestones; built REST APIs using Java Spring Boot, PostgreSQL, Kafka Debezium, and ZooKeeper for event streaming and synchronization.",
-        "Gradually took ownership of core modules and deployments on AWS EC2, containerized with Docker, and independently built 80% of the React.js frontend for real-time tracking dashboards."
+        "Delivered real-time shipment milestone tracking to enterprise clients by building an event-driven microservices platform processing high-frequency status updates with PostgreSQL, Kafka, and Debezium CDC pipelines.",
+        "Owned end-to-end development of React.js tracking dashboards and REST APIs consumed by enterprise clients, supporting live data visualization across thousands of daily shipment events."
       ],
-      skills: ["Java", "Spring Boot", "PostgreSQL", "Kafka", "Debezium", "React.js", "Docker", "AWS EC2"]
+      skills: ["React.js", "TypeScript", "Python", "PostgreSQL", "Kafka", "Debezium", "Docker", "AWS EC2", "REST APIs"]
     }
   ];
 
