@@ -12,11 +12,7 @@ const About = () => {
             building intelligent, scalable systems that solve real-world problems. My expertise spans the full spectrum of 
             modern software development — from designing geospatial ETL pipelines to deploying production-ready machine learning models.
           </p>
-          <p className="about-description">
-            At <strong>KAMUIT</strong>, I architected detour-aware ride-matching systems using Python, FastAPI, and PostgreSQL with PostGIS, 
-            processing 50K+ trips while optimizing driver pools by 65% and cutting detours by 22%. My work involves building 
-            fault-tolerant streaming infrastructure with Redis, distributed locks, and payment integrations via Stripe Connect.
-          </p>
+
           <p className="about-description">
             At <strong>Intemo Technologies</strong>, I've pioneered AI-driven document automation pipelines using OCR, LLMs (ChatGPT & Gemini), 
             and FastAPI to eliminate manual ERP data entry. I've also developed ML models for aviation time prediction using SVR, 
